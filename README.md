@@ -15,6 +15,6 @@ Depends on Gradle. Instructions to install: https://gradle.org/install/#install
 
 `output`: AbsolutePath to output file.
 
-`inputBufferSize`: Power of 2 integer to size the input RingBuffer. The larger this is, the quicker Http requests will execute and the more image data that will be saved in memory (as bytes).
+`inputBufferSize`: Power of 2 integer to size the input RingBuffer. The larger this is, the quicker Http requests will execute, but the more image data that will be saved in memory (as bytes).
 
-`outputBufferSize`:  Power of 2 integer to size the output RingBuffer. The larger this is, the more output Strings can be saved. This should be large enough to not block the processors working on the input.
+`outputBufferSize`:  Power of 2 integer to size the output RingBuffer. The larger this is, the more output Strings can be saved. This should be large enough to not block the processors working on the input. Because the output handler is simply writing to file, this should be empty most of time.
