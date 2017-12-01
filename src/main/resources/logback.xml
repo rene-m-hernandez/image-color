@@ -1,0 +1,11 @@
+<configuration>
+    <appender name="appender-stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{yyyy-MM-dd@HH:mm:ss.SSS} [%thread] [image-id:%mdc{image-id}] %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root>
+        <level value="trace" />
+        <appender-ref ref="appender-stdout" />
+    </root>
+</configuration>
