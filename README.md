@@ -24,3 +24,7 @@ Application make use of:
 * Apache NIO: https://hc.apache.org/httpcomponents-core-ga/tutorial/html/nio.html
 * LMAX Disruptor: https://github.com/LMAX-Exchange/disruptor/wiki/Introduction
 * Image analysis alogrithm is very crude and has much opporunity for optimization: loops through each pixel, keeping track of the number of occurrences of any given RGB value. It currently excludes white.
+
+## Testing
+jvisualvm output of CPU usage and Heap usage during run of urls.txt:
+![alt text](https://github.com/rene-m-hernandez/image-color/blob/master/CPUandMEMusage.png)
